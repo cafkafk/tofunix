@@ -71,7 +71,7 @@
         # terranixOptions ast, if you want to run
         # terranix in a repl.
         lib.terranixOptionsAst =
-          { system ? ""
+          { system
           , pkgs ? builtins.getAttr system nixpkgs.outputs.legacyPackages
           , modules ? [ ]
           , moduleRootPath ? "/"
@@ -86,7 +86,7 @@
         # create a config.tf.json.
         # you have to either have to name a system or set pkgs.
         lib.terranixConfiguration =
-          { system ? ""
+          { system
           , pkgs ? builtins.getAttr system nixpkgs.outputs.legacyPackages
           , extraArgs ? { }
           , modules ? [ ]
@@ -108,7 +108,7 @@
         # create a options.json.
         # you have to either have to name a system or set pkgs.
         lib.terranixOptions =
-          { system ? ""
+          { system
           , pkgs ? builtins.getAttr system nixpkgs.outputs.legacyPackages
           , modules ? [ ]
           , moduleRootPath ? "/"
