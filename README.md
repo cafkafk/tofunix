@@ -1,3 +1,10 @@
+<blockquote>
+<p>[!CAUTION]
+This project exists just for me. Do not use it.</p>
+</blockquote>
+
+---
+
 A NixOS way to create `terraform.json` files.
 
 # Documentation
